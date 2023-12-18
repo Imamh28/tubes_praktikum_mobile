@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tubesmobile.adapter.CountryListAdapter
-import com.example.tubesmobile.data.CountryItem
 import com.example.tubesmobile.databinding.ActivityMainBinding
 import com.example.tubesmobile.rest.RetrofitClient
 import retrofit2.Call
