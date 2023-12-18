@@ -4,6 +4,7 @@ package com.example.tubesmobile.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tubesmobile.data.CountryItem
 import com.example.tubesmobile.databinding.CountryItemBinding
 
 class CountryListAdapter(

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.example.tubesmobile.data.CountryDetail
 import com.example.tubesmobile.databinding.ActivityDetailBinding
 import com.example.tubesmobile.rest.RetrofitClient
 import retrofit2.Call
@@ -63,10 +64,10 @@ class DetailActivity : AppCompatActivity() {
 
     private fun deleteCountry(countryId: String) {
         RetrofitClient.instance.deleteCountryDetail(countryId)
-            .enqueue(object: Callback<com.example.mobile_programming_8.data.Response> {
+            .enqueue(object: Callback<com.example.tubesmobile.data.Response> {
                 override fun onResponse(
-                    call: Call<com.example.mobile_programming_8.data.Response>,
-                    response: Response<com.example.mobile_programming_8.data.Response>
+                    call: Call<com.example.tubesmobile.data.Response>,
+                    response: Response<com.example.tubesmobile.data.Response>
                 ) {
                     if (response.code() == 200) {
                         val resp = response.body()
@@ -86,7 +87,7 @@ class DetailActivity : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<com.example.mobile_programming_8.data.Response>, t: Throwable) {
+                override fun onFailure(call: Call<com.example.tubesmobile.data.Response>, t: Throwable) {
                     Toast.makeText(this@DetailActivity, "Something wrong on server...", Toast.LENGTH_LONG).show()
                     Log.d("DELETE COUNTRY FAIL", t.toString())
                 }
