@@ -7,16 +7,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
+    android:background="@color/white"
 
     tools:context=".EditActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="300dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perbarui Tugas"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -40,7 +44,7 @@
             android:padding="16dp"
             android:hint="Masukkan Waktu Deadline"
             android:gravity="start|center_vertical"
-            android:background="@drawable/blue_border">
+            android:background="@drawable/blue_border"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -72,13 +76,18 @@
             android:layout_height="60dp"
             android:text="Update"
             android:id="@+id/updateButton"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/blue"
-            app:cornerRadius = "20dp"/>
+            android:background="@color/blue"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
 
-    </LinearLayout>
+
 
 </LinearLayout>
