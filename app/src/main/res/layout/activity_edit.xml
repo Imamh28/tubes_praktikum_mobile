@@ -40,7 +40,7 @@
             android:padding="16dp"
             android:hint="Masukkan Waktu Deadline"
             android:gravity="start|center_vertical"
-            android:background=@color
+            android:background="@drawable/blue_border">
 
         <EditText
             android:layout_width="match_parent"
