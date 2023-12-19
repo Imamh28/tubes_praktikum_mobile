@@ -18,8 +18,8 @@ class CountryListAdapter(
         // bind the items with each item of the list
         // which than will be shown in recycler view
         fun bind(country: CountryItem) = with(binding) {
-            taskName.text = country.countryName
-            taskDeadline.text = country.countryArea
+            taskName.text = country.task_name
+            taskDeadline.text = country.task_deadline.toString()
             root.setOnClickListener { itemClickListener(country) }
         }
     }
