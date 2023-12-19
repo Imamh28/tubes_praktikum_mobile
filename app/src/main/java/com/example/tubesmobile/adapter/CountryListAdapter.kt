@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tubesmobile.data.CountryItem
-import com.example.tubesmobile.databinding.CountryItemBinding
+import com.example.tubesmobile.databinding.TaskItemBinding
 
 class CountryListAdapter(
     private val countries: ArrayList<CountryItem>,
@@ -13,13 +13,13 @@ class CountryListAdapter(
 ): RecyclerView.Adapter<CountryListAdapter.CountryViewHolder>() {
 
     // create an inner class for ViewHolder
-    inner class CountryViewHolder(private val binding: CountryItemBinding):
+    inner class CountryViewHolder(private val binding: TaskItemBinding):
         RecyclerView.ViewHolder(binding.root) {
         // bind the items with each item of the list
         // which than will be shown in recycler view
         fun bind(country: CountryItem) = with(binding) {
-            tvCountryName.text = country.countryName
-            tvCountryArea.text = country.countryArea
+            taskName.text = country.countryName
+            taskDeadline.text = country.countryArea
             root.setOnClickListener { itemClickListener(country) }
         }
     }
@@ -27,7 +27,7 @@ class CountryListAdapter(
     // inside the onCreateViewHolder inflate the view of CountryItemBinding
     // and return new ViewHolder object containing this layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryViewHolder {
-        val binding = CountryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = TaskItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
         return CountryViewHolder(binding)
     }
