@@ -21,10 +21,10 @@ class EditActivity : AppCompatActivity() {
 
         val countryData: CountryDetail? = intent.getParcelableExtra("country_detail")
 
-        binding.updateNamaTugas.setText(countryData!!.task_name)
-        binding.updateWaktuDeadline.setText(countryData.subject_name)
-        binding.updateMataKuliah.setText((countryData.task_deadline!!).toString());
-        binding.updateDeskripsiSingkat.setText(countryData.task_description)
+        binding.editTaskName.setText(countryData!!.task_name)
+        binding.editSubjectName.setText(countryData.subject_name)
+        binding.editTaskDeadline.setText((countryData.task_deadline!!).toString());
+        binding.editTaskDeadline.setText(countryData.task_description)
 
         binding.updateButton.setOnClickListener {
             updateCountryDetail(countryData.countryId!!)
@@ -32,23 +32,23 @@ class EditActivity : AppCompatActivity() {
     }
 
     private fun updateCountryDetail(countryId: Int) {
-        val inputName = binding.updateNamaTugas.text.toString().trim()
-        val inputContinent = binding.updateWaktuDeadline.text.toString().trim()
-        val inputPopulation = binding.updateMataKuliah.text.toString().trim()
-        val inputDescription = binding.updateDeskripsiSingkat.text.toString().trim()
+        val inputName = binding.editTaskName.text.toString().trim()
+        val inputContinent = binding.editSubjectName.text.toString().trim()
+        val inputPopulation = binding.editTaskDeadline.text.toString().trim()
+        val inputDescription = binding.editTaskDesc.text.toString().trim()
 
         //validation data
         if (inputName.isEmpty()) {
-            binding.updateNamaTugas.error = "Field is empty"
+            binding.editTaskName.error = "Field is empty"
         }
         if (inputContinent.isEmpty()) {
-            binding.updateWaktuDeadline.error = "Field is empty"
+            binding.editSubjectName.error = "Field is empty"
         }
         if (inputPopulation.isEmpty()) {
-            binding.updateMataKuliah.error = "Field is empty"
+            binding.editTaskDeadline.error = "Field is empty"
         }
         if (inputDescription.isEmpty()) {
-            binding.updateDeskripsiSingkat.error = "Field is empty"
+            binding.editTaskDesc.error = "Field is empty"
         }
 
         if (inputName.isNotEmpty() && inputContinent.isNotEmpty() && inputPopulation.isNotEmpty() && inputDescription.isNotEmpty()) {
