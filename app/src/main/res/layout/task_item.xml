@@ -14,10 +14,10 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp">
         <TextView
-            android:id="@+id/tv_country_name"
+            android:id="@+id/namaTugas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Country Name"
+            android:text="Nama Tugas"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -28,16 +28,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_country_area"
+            android:id="@+id/waktuDeadline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Area"
+            android:text="Deadline"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:layout_marginTop="5dp"
-            app:layout_constraintStart_toStartOf="@id/tv_country_name"
-            app:layout_constraintEnd_toEndOf="@id/tv_country_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_name"
+            app:layout_constraintStart_toStartOf="@id/namaTugas"
+            app:layout_constraintEnd_toEndOf="@id/namaTugas"
+            app:layout_constraintTop_toBottomOf="@id/namaTugas"
             />
 
         <!--        <TextView-->
