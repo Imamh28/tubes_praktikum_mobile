@@ -21,10 +21,10 @@ class EditActivity : AppCompatActivity() {
 
         val countryData: CountryDetail? = intent.getParcelableExtra("country_detail")
 
-        binding.updateNamaTugas.setText(countryData!!.countryName)
-        binding.updateWaktuDeadline.setText(countryData.countryArea)
-        binding.updateMataKuliah.setText((countryData.countryPopulation!!).toString());
-        binding.updateDeskripsiSingkat.setText(countryData.countryDescription)
+        binding.updateNamaTugas.setText(countryData!!.task_name)
+        binding.updateWaktuDeadline.setText(countryData.subject_name)
+        binding.updateMataKuliah.setText((countryData.task_deadline!!).toString());
+        binding.updateDeskripsiSingkat.setText(countryData.task_description)
 
         binding.updateButton.setOnClickListener {
             updateCountryDetail(countryData.countryId!!)

@@ -45,10 +45,10 @@ class DetailActivity : AppCompatActivity() {
                         list = response.body()!!
                         Log.d("GET COUNTRY DETAIL", list.toString())
 
-                        binding.taskName.text = list.countryName
-                        binding.taskSubjectName.text = list.countryArea
-                        binding.taskDeadline.text = list.countryPopulation.toString()
-                        binding.taskDesc.text = list.countryDescription
+                        binding.taskName.text = list.task_name
+                        binding.taskSubjectName.text = list.subject_name
+                        binding.taskDeadline.text = list.task_deadline.toString()
+                        binding.taskDesc.text = list.task_description
                     } else {
                         Toast.makeText(this@DetailActivity, "Fail fetching from database response is not 200", Toast.LENGTH_LONG).show()
                         Log.d("GET COUNTRY ITEMS FAIL ${response.code()}", response.body().toString())
