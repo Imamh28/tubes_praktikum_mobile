@@ -30,7 +30,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_countries"
-            tools:listitem="@layout/country_item"
+            tools:listitem="@layout/task_item"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:orientation="vertical"
             android:scrollbars="vertical"

@@ -23,7 +23,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/edt_name"
+        android:id="@+id/add_task_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border" />
@@ -35,7 +35,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/edt_continent"
+        android:id="@+id/add_subject_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border" />
@@ -47,7 +47,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/edt_population"
+        android:id="@+id/add_task_deadline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
@@ -60,7 +60,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/edt_description"
+        android:id="@+id/add_task_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"/>

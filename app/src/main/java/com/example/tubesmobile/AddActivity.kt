@@ -26,23 +26,23 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun addCountryData() {
-        val inputName = binding.edtName.text.toString().trim()
-        val inputContinent = binding.edtContinent.text.toString().trim()
-        val inputPopulation = binding.edtPopulation.text.toString().trim()
-        val inputDescription = binding.edtDescription.text.toString().trim()
+        val inputName = binding.addTaskName.text.toString().trim()
+        val inputContinent = binding.addSubjectName.text.toString().trim()
+        val inputPopulation = binding.addTaskDeadline.text.toString().trim()
+        val inputDescription = binding.addTaskDesc.text.toString().trim()
 
         //validation data
         if (inputName.isEmpty()) {
-            binding.edtName.error = "Field is empty"
+            binding.addTaskName.error = "Field is empty"
         }
         if (inputContinent.isEmpty()) {
-            binding.edtContinent.error = "Field is empty"
+            binding.addSubjectName.error = "Field is empty"
         }
         if (inputPopulation.isEmpty()) {
-            binding.edtPopulation.error = "Field is empty"
+            binding.addTaskDeadline.error = "Field is empty"
         }
         if (inputDescription.isEmpty()) {
-            binding.edtDescription.error = "Field is empty"
+            binding.addTaskDesc.error = "Field is empty"
         }
 
         if (inputName.isNotEmpty() && inputContinent.isNotEmpty() && inputPopulation.isNotEmpty() && inputDescription.isNotEmpty()) {

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_country_name"
+            android:id="@+id/task_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Nama Tugas"
@@ -30,43 +30,43 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_country_area"
+            android:id="@+id/task_subject_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Mata Kuliah"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:layout_marginTop="5dp"
-            app:layout_constraintStart_toStartOf="@id/tv_country_name"
-            app:layout_constraintEnd_toEndOf="@id/tv_country_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_name"
+            app:layout_constraintStart_toStartOf="@id/task_name"
+            app:layout_constraintEnd_toEndOf="@id/task_name"
+            app:layout_constraintTop_toBottomOf="@id/task_name"
             />
 
         <TextView
-            android:id="@+id/tv_country_population"
+            android:id="@+id/task_deadline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Population of Country"
+            android:text="Waktu Deadline"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:layout_marginTop="5dp"
-            app:layout_constraintStart_toStartOf="@id/tv_country_name"
-            app:layout_constraintEnd_toEndOf="@id/tv_country_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_area"
+            app:layout_constraintStart_toStartOf="@id/task_name"
+            app:layout_constraintEnd_toEndOf="@id/task_name"
+            app:layout_constraintTop_toBottomOf="@id/task_subject_name"
             />
 
         <TextView
-            android:id="@+id/tv_country_desc"
+            android:id="@+id/task_desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:lines="5"
-            android:text="Deskripsi"
+            android:text="Deskripsi Tugas"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@id/tv_country_name"
-            app:layout_constraintStart_toStartOf="@id/tv_country_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_population" />
+            app:layout_constraintEnd_toEndOf="@id/task_name"
+            app:layout_constraintStart_toStartOf="@id/task_name"
+            app:layout_constraintTop_toBottomOf="@id/task_deadline" />
 
         <Button
             android:id="@+id/btn_edit"
@@ -76,7 +76,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="50dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_desc"
+            app:layout_constraintTop_toBottomOf="@id/task_desc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btn_delete"/>
 
@@ -88,7 +88,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_desc"
+            app:layout_constraintTop_toBottomOf="@id/task_desc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btn_edit"/>
 
