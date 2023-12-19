@@ -59,15 +59,14 @@
             android:id="@+id/tv_country_desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Deskripsi"
+            android:layout_marginTop="5dp"
             android:lines="5"
+            android:text="Deskripsi"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:layout_marginTop="5dp"
-            app:layout_constraintStart_toStartOf="@id/tv_country_name"
             app:layout_constraintEnd_toEndOf="@id/tv_country_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_country_population"
-            />
+            app:layout_constraintStart_toStartOf="@id/tv_country_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_country_population" />
 
         <Button
             android:id="@+id/btn_edit"
