@@ -8,7 +8,7 @@ data class CountryDetail(
     var countryId : Int?,
     var task_name : String?,
     var subject_name : String?,
-    var task_deadline : Int?,
+    var task_deadline : String?,
     var task_description : String
 ) : Parcelable
 
