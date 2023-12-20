@@ -16,20 +16,20 @@ interface API {
     @FormUrlEncoded
     @POST("add.php")
     fun addCountryDetail(
-        @Field("country_name") country_name: String?,
-        @Field("country_continent") country_continent: String?,
-        @Field("country_population") country_population: String?,
-        @Field("country_description") country_description: String?
+        @Field("task_name") task_name: String?,
+        @Field("subject_name") subject_name: String?,
+        @Field("task_deadline") task_deadline: String?,
+        @Field("task_description") task_description: String?
     ): Call<Response>
 
     @FormUrlEncoded
     @POST("update.php")
     fun updateCountryDetail(
         @Field("country_id") country_id: String?,
-        @Field("country_name") country_name: String?,
-        @Field("country_continent") country_continent: String?,
-        @Field("country_population") country_population: String?,
-        @Field("country_description") country_description: String?
+        @Field("task_name") task_name: String?,
+        @Field("subject_name") subject_name: String?,
+        @Field("task_deadline") task_deadline: String?,
+        @Field("task_description") task_description: String?
     ): Call<Response>
 
     @FormUrlEncoded
