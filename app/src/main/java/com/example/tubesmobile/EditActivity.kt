@@ -21,13 +21,19 @@ class EditActivity : AppCompatActivity() {
 
         val countryData: CountryDetail? = intent.getParcelableExtra("country_detail")
 
-        binding.editTaskName.setText(countryData!!.task_name)
-        binding.editSubjectName.setText(countryData.subject_name)
-        binding.editTaskDeadline.setText((countryData.task_deadline!!).toString());
-        binding.editTaskDeadline.setText(countryData.task_description)
+        if (countryData != null) {
+            binding.editTaskName.setText(countryData.task_name)
+            binding.editSubjectName.setText(countryData.subject_name)
+            binding.editTaskDeadline.setText(countryData.task_deadline.toString())
+            binding.editTaskDesc.setText(countryData.task_description)
 
-        binding.updateButton.setOnClickListener {
-            updateCountryDetail(countryData.countryId!!)
+            binding.updateButton.setOnClickListener {
+                updateCountryDetail(countryData.countryId!!)
+            }
+        } else {
+            // Handle the case when alamatData is null
+            Toast.makeText(this, "Failed to retrieve address data", Toast.LENGTH_SHORT).show()
+            finish() // Close the activity if data is not available
         }
     }
 

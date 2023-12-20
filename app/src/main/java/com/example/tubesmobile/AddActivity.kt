@@ -26,27 +26,27 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun addCountryData() {
-        val inputName = binding.addTaskName.text.toString().trim()
-        val inputContinent = binding.addSubjectName.text.toString().trim()
-        val inputPopulation = binding.addTaskDeadline.text.toString().trim()
+        val inputTask = binding.addTaskName.text.toString().trim()
+        val inputSubject = binding.addSubjectName.text.toString().trim()
+        val inputDeadline = binding.addTaskDeadline.text.toString().trim()
         val inputDescription = binding.addTaskDesc.text.toString().trim()
 
         //validation data
-        if (inputName.isEmpty()) {
+        if (inputTask.isEmpty()) {
             binding.addTaskName.error = "Field is empty"
         }
-        if (inputContinent.isEmpty()) {
+        if (inputSubject.isEmpty()) {
             binding.addSubjectName.error = "Field is empty"
         }
-        if (inputPopulation.isEmpty()) {
+        if (inputDeadline.isEmpty()) {
             binding.addTaskDeadline.error = "Field is empty"
         }
         if (inputDescription.isEmpty()) {
             binding.addTaskDesc.error = "Field is empty"
         }
 
-        if (inputName.isNotEmpty() && inputContinent.isNotEmpty() && inputPopulation.isNotEmpty() && inputDescription.isNotEmpty()) {
-            RetrofitClient.instance.addCountryDetail(inputName, inputContinent, inputPopulation, inputDescription)
+        if (inputTask.isNotEmpty() && inputSubject.isNotEmpty() && inputDeadline.isNotEmpty() && inputDescription.isNotEmpty()) {
+            RetrofitClient.instance.addCountryDetail(inputTask, inputSubject, inputDeadline, inputDescription)
                 .enqueue(object: Callback<Response> {
                     override fun onResponse(
                         call: Call<Response>,
