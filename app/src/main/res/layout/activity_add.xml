@@ -23,22 +23,32 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/add_task_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border" />
+        android:id="@+id/add_task_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/blue_border"/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mata Kuliah"
         android:textSize="20sp"/>
-
     <EditText
-        android:id="@+id/add_subject_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border" />
+        android:id="@+id/add_subject_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/blue_border"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -47,11 +57,18 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/add_task_deadline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:inputType="number" />
+        android:id="@+id/add_task_deadline"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/blue_border"
+        android:inputType="number"/>
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -60,16 +77,21 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/add_task_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"/>
+        android:id="@+id/add_task_desc"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/blue_border" />
 
     <Button
         android:id="@+id/btn_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:text="Tambah"
         android:textSize="18sp"
         android:gravity="center"
         android:textColor="#FFFFFF"
