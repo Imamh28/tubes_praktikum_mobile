@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue2"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,8 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="5dp"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/blue_border">
+        android:layout_marginEnd="5dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_countries"
@@ -41,9 +41,9 @@
 
         <Button
             android:id="@+id/btn_add"
-            android:layout_width="0dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="Tambah"
+            android:drawableEnd="@drawable/baseline_add_24"
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             app:layout_constraintEnd_toEndOf="parent"
